@@ -27,4 +27,4 @@ roles:
   - name: chrisbalmer.pihole
     scm: git
     src: git+https://github.com/chrisbalmer/ansible-role-pihole.git
-    version: v0.0.1
+    version: v0.1.0
