@@ -8,8 +8,6 @@
         composes: "{{ composes|default({}) | combine(hostvars[inventory_hostname]['compose_' + item]|default({})) }}"
       loop: "{{ group_names }}"
   roles:
-    - chrisbalmer.yum-repos
-    - chrisbalmer.firewall
     - chrisbalmer.simple-docker
     - chrisbalmer.docker-compose
     - chrisbalmer.pihole
