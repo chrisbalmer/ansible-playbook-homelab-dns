@@ -7,7 +7,7 @@ roles:
   - name: chrisbalmer.docker-compose
     scm: git
     src: git+https://github.com/chrisbalmer/ansible-role-docker-compose.git
-    version: v2.0.0
+    version: v2.0.1
   - name: chrisbalmer.nfs
     scm: git
     src: git+https://github.com/chrisbalmer/ansible-role-nfs.git

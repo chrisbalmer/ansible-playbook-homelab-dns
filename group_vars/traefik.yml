@@ -27,3 +27,6 @@ compose_traefik:
       hec_token: "{{ lookup('onepassword', 'Cribl HEC Token: Traefik', field='password', vault='homelab', username=op_email, subdomain=op_domain, secret_key=op_key, master_password=op_password) }}"
       hec_skip_verify: false
       hec_format: json
+    log:
+      level: debug
+      format: json
