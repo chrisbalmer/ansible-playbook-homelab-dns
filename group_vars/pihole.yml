@@ -50,3 +50,8 @@ compose_pihole:
         server: 172.21.7.254
       - domain: balmerfamilyfarm.com
         server: 172.21.7.254
+    splunk:
+      hec_endpoint: https://hec.balmerfamilyfarm.com
+      hec_token: "{{ lookup('onepassword', 'Cribl HEC Token: Pihole', field='password', vault='homelab', username=op_email, subdomain=op_domain, secret_key=op_key, master_password=op_password) }}"
+      hec_skip_verify: false
+      hec_format: json
